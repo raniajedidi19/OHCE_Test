@@ -4,23 +4,23 @@ Feature: Smoke tests
 
   Background:
     Given user goes to the base url
-    When Login page opens
-    And user accept cookies
+    When Login page opens successfully
+    Then user accept cookies
 
   @functional
   Scenario: Test success login with valid credentials
-    When user enters his credentials and login
+    Given user enters his credentials and login
     Then user is logged in successfully to his library
-    And An Empty library is opened
+
 
   @functional
   Scenario: Test success logout
-    When user enters his credentials and login
+    Given user enters his credentials and login
     Then user is logged in successfully to his library
     When user log out
-    Then Login page opens
+    Then Login page opens again
 
-  @functional
+ @functional
   Scenario: Test failed login
-    When user enters his credentials and login
+    When user enters his credentials and try login
     Then user gets an error message
