@@ -1,13 +1,7 @@
 package org.ohce.PagesObjects.common;
-
-import org.ohce.PagesObjects.ebooks.libraryPage;
 import org.ohce.base.base;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 
 public class SSOPage extends base {
     public SSOPage() {
@@ -24,9 +18,7 @@ public class SSOPage extends base {
     }
     public void submitLogin() {
         driver.findElement(submitSSOBtn).click();
-
     }
-
     public String getMessage(){
        return driver.findElement(errorMessage).getText();
     }

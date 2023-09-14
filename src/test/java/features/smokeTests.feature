@@ -12,7 +12,6 @@ Feature: Smoke tests
     Given user enters his credentials and login
     Then user is logged in successfully to his library
 
-
   @functional
   Scenario: Test success logout
     Given user enters his credentials and login

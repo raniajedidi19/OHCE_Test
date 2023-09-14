@@ -1,9 +1,7 @@
 package org.ohce.PagesObjects.ebooks;
 import org.ohce.base.base;
 import org.openqa.selenium.By;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+
 
 public class loginPage extends base {
 

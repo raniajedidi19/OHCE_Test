@@ -1,9 +1,11 @@
 package stepsDefinitions;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import org.junit.BeforeClass;
 import org.ohce.base.base;
-import org.openqa.selenium.WebDriver;
+
+import java.io.IOException;
+
 
 public class Hooks extends base {
 
