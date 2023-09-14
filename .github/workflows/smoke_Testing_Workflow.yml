@@ -32,6 +32,6 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Run tests
-      run: mvn test -Dcucumber.filter.tags="@functional" -Dcucumber.features="src/test/java/features" -Dcucumber.glue="stepsDefinitions" -Dcucumber.plugin="pretty"
+      run: mvn test -Dcucumber.tags="@functional" -Dcucumber.features="src/test/java/features" -Dcucumber.glue="stepsDefinitions" -Dcucumber.plugin="pretty"
 
         
