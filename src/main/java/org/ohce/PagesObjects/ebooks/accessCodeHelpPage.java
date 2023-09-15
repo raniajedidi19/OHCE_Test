@@ -1,4 +1,11 @@
 package org.ohce.PagesObjects.ebooks;
 
-public class accessCodeHelpPage {
+import org.ohce.base.base;
+
+public class accessCodeHelpPage extends base {
+
+    public accessCodeHelpPage(){}
+
+
+
 }
