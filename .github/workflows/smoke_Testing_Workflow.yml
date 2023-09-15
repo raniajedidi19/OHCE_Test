@@ -4,6 +4,10 @@ name: ebook UI smoke tests On demand
 # or API.
 on:
   workflow_dispatch:
+      inputs:
+      distribution:
+        description: 'Distribution input description'
+        required: true
     
 run-name: ebooks UI Smoke Tests by @${{ github.actor }}
 
