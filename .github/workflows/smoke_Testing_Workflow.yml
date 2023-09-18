@@ -26,8 +26,14 @@ jobs:
         distribution: 'temurin' # See 'Supported distributions' for available options
         java-version: '17'
 
-    - name: Build the project
-      run: mvn clean install
+    - name: Clean the project
+      run: mvn clean 
 
     - name: Run tests
       run: mvn test
+
+    - name: Test Reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-reports
+        path: target/reports
