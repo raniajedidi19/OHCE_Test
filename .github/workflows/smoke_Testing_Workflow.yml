@@ -27,7 +27,7 @@ jobs:
         java-version: '17'
 
     - name: Build the project
-      run: mvn clean install
+      run: mvn clean 
 
     - name: Run tests
       run: mvn test
