@@ -7,19 +7,22 @@ Feature: Smoke tests
     When Login page opens successfully
     Then user accept cookies
 
-  @functional
+  @smoke
+  @NRT
   Scenario: Test success login with valid credentials
     Given user enters his credentials and login
     Then user is logged in successfully to his library
 
-  @functional
+  @smoke
+  @NRT
   Scenario: Test success logout
     Given user enters his credentials and login
     Then user is logged in successfully to his library
     When user log out
     Then Login page opens again
 
- @functional
+ @smoke
+ @NRT
   Scenario: Test failed login
     When user enters his credentials and try login
     Then user gets an error message
