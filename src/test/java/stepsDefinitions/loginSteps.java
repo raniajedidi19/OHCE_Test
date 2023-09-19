@@ -11,13 +11,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class steps extends base {
+public class loginSteps extends base {
 
     loginPage login = new loginPage();
     SSOPage Auth0Form = new SSOPage();
     libraryPage library = new libraryPage();
 
-    public steps() {
+    public loginSteps() {
         try {
             File file = new File("src/main/java/org/ohce/envProperties/dev.properties");
             FileInputStream fis = new FileInputStream(file);
