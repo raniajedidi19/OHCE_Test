@@ -5,19 +5,22 @@ Feature: Access code help functionality test
   Background:
     Given user is on homepage
 
-  @functional
-  @NRT
+  @NRT@functional
   Scenario: Test success access to the access code help page
     When user redeems invalid code
     Then user access the access code help page successfully using the link
-  @NRT
-  @functional
+
+
+  @NRT@functional
   Scenario: Test Recovering with invalid ISBN code
     When    user is on access code help page
     And     user enters an invalid Book ISBN
     Then    check the error message displayed
-  @NRT
-  @functional
+
+
+
+
+  @NRT@functional
   Scenario: Test Recovering with valid ISBN code
     When    user is on access code help page
     And     user enters a valid Book ISBN
