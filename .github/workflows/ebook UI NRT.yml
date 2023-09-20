@@ -27,12 +27,10 @@ jobs:
         java-version: '17'
 
     - name: Clean and build the project
-      env:
-          CUCUMBER_OPTIONS: ${{ secrets.CUCUMBER_OPTIONS }}
       run:  mvn clean
 
     - name: Run tests
-      run: mvn test -Dcucumber.options="${CUCUMBER_OPTIONS}"
+      run: mvn test 
 
     - name: Test Reports
       uses: actions/upload-artifact@v3
