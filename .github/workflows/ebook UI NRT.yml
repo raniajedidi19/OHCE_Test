@@ -27,10 +27,9 @@ jobs:
         java-version: '17'
 
     - name: Clean and build the project
-      run: mvn clean install
-      
-    - name: Set Cucumber Options
-      run: echo "::set-env name=CUCUMBER_OPTIONS::--tags @NRT"  
+      env:
+          CUCUMBER_OPTIONS: ${{ secrets.CUCUMBER_OPTIONS }}
+      run:  mvn clean
 
     - name: Run tests
       run: mvn test -Dcucumber.options="${CUCUMBER_OPTIONS}"
