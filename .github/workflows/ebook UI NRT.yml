@@ -26,11 +26,14 @@ jobs:
         distribution: 'temurin' # See 'Supported distributions' for available options
         java-version: '17'
 
-    - name: Clean the project
-      run: mvn clean 
+    - name: Clean and build the project
+      run: mvn clean install
+      
+    - name: Set Cucumber Options
+      run: echo "::set-env name=CUCUMBER_OPTIONS::--tags @NRT"  
 
     - name: Run tests
-      run: mvn test -Dcucumber.options="--tags @NRT"
+      run: mvn test -Dcucumber.options="${CUCUMBER_OPTIONS}"
 
     - name: Test Reports
       uses: actions/upload-artifact@v3
