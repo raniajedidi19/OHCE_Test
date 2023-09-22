@@ -17,6 +17,9 @@ Feature: Access code help functionality test
     And     user enters an invalid Book ISBN
     Then    check the error message displayed
 
+
+
+
   @NRT@functional
   Scenario: Test Recovering with valid ISBN code
     When    user is on access code help page
