@@ -35,6 +35,6 @@ Feature: Redeem Additional Content functionality test - amazon kindle flow
   Scenario: Test entering invalid ISBN
     Given user is on Redeem Additional Content page
     When user Fills in ISBN input with invalid data
-    Then Check that ISBN validation message is displayed
+    Then Check that ISBN validation message is displayed 2
 
 
