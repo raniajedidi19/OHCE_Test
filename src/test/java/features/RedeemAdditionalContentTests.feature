@@ -11,8 +11,7 @@ Feature: Redeem Additional Content functionality test - amazon kindle flow
     When user clicks on the link No Access Code?
     Then user is redirected to Redeem Additional Content page successfully
 
-  @functional
-  @NRT @ignore
+  @ignore
   Scenario: Test success amazon redemption
     Given user is on Redeem Additional Content page
     When user enters a valid order number
