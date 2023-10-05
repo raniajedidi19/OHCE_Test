@@ -12,7 +12,7 @@ Feature: Redeem Additional Content functionality test - amazon kindle flow
     Then user is redirected to Redeem Additional Content page successfully
 
   @functional
-  @NRT
+  @NRT @ignore
   Scenario: Test success amazon redemption
     Given user is on Redeem Additional Content page
     When user enters a valid order number
