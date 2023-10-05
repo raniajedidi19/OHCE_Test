@@ -30,7 +30,7 @@ jobs:
       run:  mvn clean
 
     - name: Run tests
-      run: mvn test 
+      run: mvn test -Dcucumber.filter.tags="@NRT and not @ignore"
 
     - name: Test Reports
       uses: actions/upload-artifact@v3
