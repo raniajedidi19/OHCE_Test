@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "stepsDefinitions",
-        tags = "NRT",
+        tags = "@NRT",
         plugin = {"pretty",
                 "json:target/reports/report.json",
                 "html:target/reports/report.html",
